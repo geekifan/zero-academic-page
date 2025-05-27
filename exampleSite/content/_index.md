@@ -1,5 +1,7 @@
 ---
 title: "Lorem ipsum"
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim.
 ---
 
 # About Me {#about-me}
