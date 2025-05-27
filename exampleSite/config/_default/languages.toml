@@ -7,7 +7,6 @@ title = 'Zero'
     author = "Lorem ipsum"
     description = "Ph.D Student in [Lorem ipsum College](https://example.com). Focusing on Computer Vision and Deep Learning."
     motto = "Most things in the world are not that important. But truth and love matter."
-    footer = "Built with <a href='https://gohugo.io'>Hugo</a>. Theme <a href='https://github.com/geekifan/zero-academic-page'>Zero Academic Page</a> designed by <a href='https://github.com/geekifan'>Yifan</a> and <a href='https://github.com/HELLORPG'>Ruopeng</a>."
 
 [[en.menu.main]]
     name = 'About Me'
@@ -47,7 +46,6 @@ title = '学术主页'
     author = "王小明"
     description = "某某大学博士生，专注于计算机视觉与深度学习"
     motto = "世界上大部分事，都没有太大意义。真理与爱除外。"
-    footer = "由 <a href='https://gohugo.io'>Hugo</a> 构建。主题 <a href='https://github.com/geekifan/simple-academic-page'>Simple Academic Page</a> 由 <a href='https://github.com/geekifan'>Yifan</a> 和 <a href='https://github.com/HELLORPG'>Ruopeng</a> 设计。"
 
 [[zh.menu.main]]
     name = '关于我'

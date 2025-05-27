@@ -1,5 +1,9 @@
 <div class="footer-content">
-    {{ .Site.Params.footer | safeHTML }}
+    {{ if .Site.Params.footer }}
+        {{ .Site.Params.footer | safeHTML }}
+    {{ else }}
+        Built with <a href='https://gohugo.io'>Hugo</a>. Theme <a href='https://github.com/geekifan/zero-academic-page'>Zero Academic Page</a> designed by <a href='https://github.com/geekifan'>Yifan</a> and <a href='https://github.com/HELLORPG'>Ruopeng</a>.
+    {{ end }}
 </div>
 
 <div class="copyright">Copyright © {{ .Site.Params.author }}</div>
