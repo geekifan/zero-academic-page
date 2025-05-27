@@ -1,0 +1,22 @@
+baseURL = 'https://geekifan.github.io/zero-academic-page/'
+
+# multi-language support
+defaultContentLanguage = 'en'
+
+# enable git info
+enableGitInfo = true
+
+# disable taxonomy, term and RSS (which removes categories, tags and index.xml)
+disableKinds = ["taxonomy", "term", "RSS"]
+
+# theme
+theme = "my-academic-theme"
+themesDir = "../../"
+
+[build]
+  writeStats = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

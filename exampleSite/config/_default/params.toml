@@ -1,0 +1,30 @@
+profilePicture = "images/profile.png"
+enableDarkMode = true
+
+# Google Analytics ID, leave empty if you don't want to use Google Analytics
+googleAnalyticsID = ""
+
+[[social]]
+name = "github"
+url = "https://github.com/"
+icon = "fab fa-github"
+
+[[social]]
+name = "google-scholar"
+url = "https://scholar.google.com/"
+icon = "fab fa-google-scholar"
+
+[[social]]
+name = "email"
+url = "mailto:example@example.com"
+icon = "fas fa-envelope"
+
+[[social]]
+name = "linkedin"
+url = "https://linkedin.com/"
+icon = "fab fa-linkedin"
+
+[[social]]
+name = "zhihu"
+url = "https://zhihu.com/"
+icon = "fab fa-zhihu"
