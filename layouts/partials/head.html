@@ -1,0 +1,42 @@
+{{ $img := resources.Get .Site.Params.profilePicture }}
+<head>
+    {{ partial "analytics.html" . }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{{ .Description | default .Summary | plainify}}">
+    {{ if .Keywords }}
+    <meta name="keywords" content="{{ delimit .Keywords ", " }}">
+    {{ end }}
+    <meta name="author" content="{{ .Site.Params.author }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="{{ .Description | default .Summary | plainify}}">
+    <meta property="og:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}{{ $img.RelPermalink }}{{ end }}">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:description" content="{{ .Description | default .Summary | plainify}}">
+    <meta name="twitter:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}{{ $img.RelPermalink }}{{ end }}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ .Permalink }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ .Site.Params.favicon | default "/favicon.ico" | relURL }}">
+    
+    {{ $styles := resources.Get "css/main.css" | minify }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+    {{ $js := resources.Get "js/main.js" | minify }}
+    <script src="{{ $js.RelPermalink }}" defer></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
