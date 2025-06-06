@@ -424,6 +424,13 @@ header {
     color: var(--text-color-light);
 }
 
+.navbar .nav-links i {
+    /* margin-left: 4px; */
+    font-size: 0.6em;
+    vertical-align: super;
+    color: var(--text-color-light);
+}
+
 /* remove trailing icon for links with a img inside */
 .no-trailing-icon::after {
     content: none !important;

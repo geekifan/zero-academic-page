@@ -6,10 +6,16 @@
     <div class="nav-links">
         {{ range .Site.Menus.main }}
         <div class="nav-item">
-            
-            <a href="{{ .URL }}" class="nav-link">
-                {{ .Name }}
-            </a>   
+            {{ if hasPrefix .URL "http" }}
+                <a href="{{ .URL }}" class="nav-link" target="_blank">
+                    {{ .Name }}
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            {{ else }}
+                <a href="{{ .URL }}" class="nav-link">
+                    {{ .Name }}
+                </a>
+            {{ end }}
         </div>
         {{ end }}
     </div>
